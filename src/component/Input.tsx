@@ -13,7 +13,7 @@ export default function Input(props:InputProps){
         <TextField
           label={props.label}
           type="number"
-          placeholder="r:[0,255]"
+          // placeholder="r:[0,255]"
           value={props.value}
           onChange={props.change}
         //   InputProps={{

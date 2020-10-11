@@ -264,16 +264,16 @@ class RgbInput extends React.Component<{}, RGBInputState>{
       <div className="bg" style={{backgroundColor:"white"}}>
         <h4>RGB</h4>
         <div style={{ display: "flex", flexDirection: "row" }}>
-          <Input value={r} label={'r'} change={(e) => { this.handleInputChange(e.target.value, "rgb", 0) }}></Input>
-          <Input value={g} label={'g'} change={(e) => { this.handleInputChange(e.target.value, "rgb", 1) }}></Input>
-          <Input value={b} label={'b'} change={(e) => { this.handleInputChange(e.target.value, "rgb", 2) }}></Input>
+          <Input value={r} label={'r:[0,255]'} change={(e) => { this.handleInputChange(e.target.value, "rgb", 0) }}></Input>
+          <Input value={g} label={'g:[0,255]'} change={(e) => { this.handleInputChange(e.target.value, "rgb", 1) }}></Input>
+          <Input value={b} label={'b:[0,255]'} change={(e) => { this.handleInputChange(e.target.value, "rgb", 2) }}></Input>
         </div>
 
         <h4>HSV</h4>
         <div style={{ display: "flex", flexDirection: "row" }}>
-          <Input value={h} label={'h'} change={(e) => { this.handleInputChange(e.target.value, "hsv", 0) }}></Input>
-          <Input value={s} label={'s'} change={(e) => { this.handleInputChange(e.target.value, "hsv", 1) }}></Input>
-          <Input value={v} label={'v'} change={(e) => { this.handleInputChange(e.target.value, "hsv", 2) }}></Input>
+          <Input value={h} label={'h:[0,360]'} change={(e) => { this.handleInputChange(e.target.value, "hsv", 0) }}></Input>
+          <Input value={s} label={'s:[0,1]'} change={(e) => { this.handleInputChange(e.target.value, "hsv", 1) }}></Input>
+          <Input value={v} label={'v:[0,1]'} change={(e) => { this.handleInputChange(e.target.value, "hsv", 2) }}></Input>
         </div>
 
         <h4>HEX</h4>
