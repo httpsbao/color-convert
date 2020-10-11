@@ -1,0 +1,28 @@
+/* body{
+    margin:0;
+    min-width:100vw;
+    min-height:100vh
+} */
+.color{
+    /* width:500px;
+    height:500px; */
+    margin:0;
+    min-width:100vw;
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 20px; */
+}
+
+.bg{
+    opacity: 0.7;
+    width:400px;
+    height:400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}

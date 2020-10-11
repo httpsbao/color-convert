@@ -2,7 +2,6 @@ import React from 'react';
 import { CSSProperties } from 'react';
 //import React, { CSSProperties } from 'react';
 import TextField from '@material-ui/core/TextField';
-//import InputAdornment from '@material-ui/core/InputAdornment'
 
 interface HEXInputProps{
     value:string;
@@ -13,7 +12,7 @@ export default function HEXInput(props:HEXInputProps){
     return (
         <div >
         <TextField
-          label="16进制颜色如:#76eec6"
+          label="hex"
           type="text"
           value={props.value}
           onChange={props.change}
@@ -21,6 +20,7 @@ export default function HEXInput(props:HEXInputProps){
           // startAdornment: <InputAdornment position="start">#...</InputAdornment>,
           // }}
           variant="outlined"
+          style={{width:"150px"}}
         />
         </div>
     )
