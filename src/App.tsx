@@ -17,7 +17,7 @@ class RgbInput extends React.Component<{}, RGBInputState>{
 
     let randomColor=["#5674c9","#25c9ab","#9969c9","#e6ee9c"];
     let randomRgb=[[153,105,201],[37,201,171],[153,105,201],[230,238,156]];
-    let randomHsv=[[270,0.4776,0.7882],[168.2209,0.815,0.7843],[270,0.4776,0.7882],[65.8537,0.3445,0.9333]];
+    let randomHsv=[[270,0.4776,0.7882],[169.0244,0.8159,0.7882],[270,0.4776,0.7882],[65.8537,0.3445,0.9333]];
     let index = Math.floor((Math.random()*randomColor.length));
 
     this.state = {
