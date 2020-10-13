@@ -76,19 +76,44 @@ class RgbInput extends React.Component<{}, RGBInputState>{
     }
     str += shTmp;
     str += numTmp;
-    //console.log(str)
     return str;
   }
 
   handleRgbConverse(flag="rgb") {
     let [r, g, b] = this.state.rgb;
 
-    if(r<0||!r) r=0;
-    else if(r>255) r=255;
-    if(g<0||!g) g=0;
-    else if(g>255) g=255;
-    if(b<0||!b) b=0;
-    else if(b>255) b=255;    
+    if(!r) r=0;
+    else {
+      if(r>255){
+        r=255;
+      }
+      else if(r<0){
+        r=0;
+      }
+      this.setState({rgb:[r,g,b]})
+    }
+
+    if(!g) g=0;
+    else {
+      if(g>255){
+        g=255;
+      }
+      else if(g<0){
+        g=0;
+      }
+      this.setState({rgb:[r,g,b]})
+    }
+    
+    if(!b) b=0;
+    else {
+      if(b>255){
+        b=255;
+      }
+      else if(b<0){
+        b=0;
+      }
+      this.setState({rgb:[r,g,b]})
+    }
 
     let str = "#"
     str += this.func(r) + this.func(g) + this.func(b);
@@ -144,12 +169,38 @@ class RgbInput extends React.Component<{}, RGBInputState>{
   handleHsvConverse() {
     let [h, s, v] = this.state.hsv;
 
-    if(h<0||!h) h=0;
-    else if(h>360) h=360;
-    if(s<0||!s) s=0;
-    else if(s>1) s=1;
-    if(v<0||!v) v=0;
-    else if(v>1) v=1;
+    if(!h) h=0;
+    else {
+      if(h>360){
+        h=360;
+      }
+      else if(h<0){
+        h=0;
+      }
+      this.setState({hsv:[h,s,v]})
+    }
+
+    if(!s) s=0;
+    else {
+      if(s>1){
+        s=1;
+      }
+      else if(s<0){
+        s=0;
+      }
+      this.setState({hsv:[h,s,v]})
+    }
+
+    if(!v) v=0;
+    else {
+      if(v>1){
+        v=1;
+      }
+      else if(v<0){
+        v=0;
+      }
+      this.setState({hsv:[h,s,v]})
+    }
 
     let r = 0, g = 0, b = 0;
     let i = Math.floor((h / 60) % 6);
@@ -197,6 +248,12 @@ class RgbInput extends React.Component<{}, RGBInputState>{
 
   async handleHexInputChange(value:string){
     let rawHex=value;
+    if(rawHex[0]!=='#'){
+      rawHex='#';
+    }
+    if(rawHex.length>7){
+      rawHex=rawHex.slice(0,7);
+    }
     this.setState({rawHex});
     let reg=/^#([0-9a-fA-f]{3}|[0-9a-fA-f]{6})$/;
     rawHex=rawHex.toLowerCase();
@@ -220,38 +277,6 @@ class RgbInput extends React.Component<{}, RGBInputState>{
       this.handleRgbConverse("hex");
     }
   }
-  // handleHexInputChange(value:string){
-  //   let rawHex=value;
-  //   this.setState({rawHex})
-  //   console.log(rawHex)
-  //   let reg = /^#([0-9a-fA-f]{3}|[0-9a-fA-f]{6})$/;
-  //   rawHex = rawHex.toLowerCase();
-  //   if (rawHex && reg.test(rawHex)) {
-  //     this.setState({hex:rawHex},()=>{
-  //       let sixColor = "";
-  //       if (rawHex.length === 4) {
-  //         sixColor+="#"
-  //         for (let i=1; i<4; i++) {
-  //           sixColor+=rawHex[i];
-  //           sixColor+=rawHex[i];
-  //         }
-  //       }else{
-  //         sixColor=rawHex;
-  //       }
-
-  //       //处理六位的颜色值
-  //       for (let i=1,j=0; i<7; i+=2,j++) {
-  //         this.state['rgb'][j]=parseInt("0x"+sixColor.slice(i,i+2));
-  //       }
-        
-  //       this.setState(this.state,()=>{
-  //         console.log(this.state.rgb)
-  //         this.handleRgbConverse();
-  //         console.log(this.state.hsv)
-  //       });
-  //     })
-  //   }
-  // }
 
   render() {
     let [r, g, b] = this.state.rgb;

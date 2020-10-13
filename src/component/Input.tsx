@@ -20,7 +20,7 @@ export default function Input(props:InputProps){
         //     startAdornment: <InputAdornment position="start">Kg</InputAdornment>,
         //   }}
           variant="outlined"
-          style={{width:"110px"}}
+          style={{width:"110px",marginLeft:"5px",marginRight:"5px"}}
         />
         </div>
     )
