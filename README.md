@@ -9,6 +9,7 @@ Project purpose:
 Operate:
 ### `You can enter the color numbers in the input box`
 
+I used GitHub Actions to automatically publish the project.
 You can access through this address :
 ### `https://httpsbao.github.io/color-converse/ `
 
