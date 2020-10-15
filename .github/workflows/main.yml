@@ -21,3 +21,5 @@ jobs:
         ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: gh-pages
         FOLDER: build
+        GIT_CONFIG_NAME: ci-bot
+        GIT_CONFIG_EMAIL: code@csi.lk
