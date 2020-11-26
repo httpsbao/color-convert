@@ -1,4 +1,4 @@
-name: color-converse GitHub Actions
+name: color-convert GitHub Actions
 on:
   push:
     branches:
