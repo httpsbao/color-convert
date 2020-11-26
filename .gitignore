@@ -24,4 +24,4 @@ yarn-error.log*
 
 debug.log
 
-/build
+build
