@@ -2,7 +2,7 @@
 
 Easy color convert, rgb and hex and hexadecimal.
 
-![](./picture/show.png)
+![](./picture/show-1.png)
 
 You can access through this address:
 
@@ -14,3 +14,5 @@ https://httpsbao.github.io/color-convert/
 ### Deveploment
 
 In the project directory, you can run: `npm start` to develop
+
+![](./picture/show.png)
