@@ -1,18 +1,16 @@
-In the project directory, you can run:
+# Color Convert
 
-### `npm start`
+Easy color convert, rgb and hex and hexadecimal.
 
-Project purpose:
+![](./picture/show.png)
 
-### `ealize color conversion, rgb and hex and hexadecimal.`
+You can access through this address:
 
-Operate:
+https://httpsbao.github.io/color-convert/
 
-### `You can enter the color numbers in the input box`
+- You can enter the color numbers in the input box
+- I used GitHub Actions to automatically publish the project.
 
-I used GitHub Actions to automatically publish the project.
-You can access through this address :
+### Deveploment
 
-### `https://httpsbao.github.io/color-convert/ `
-
-![homepage](https://github.com/httpsbao/color-convert/blob/master/picture/example.jpg)
+In the project directory, you can run: `npm start` to develop
