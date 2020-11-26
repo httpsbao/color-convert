@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6509b31c34c8850a86e521a795c227d8",
+    "revision": "35c43f9a6ee56cf1d7003bb13ff1ae7e",
     "url": "/color-converse/index.html"
   },
   {
-    "revision": "a26ebc1e123d9ba925a2",
+    "revision": "eb15cf0f71b54acd2086",
     "url": "/color-converse/static/css/main.bc6d1b0b.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/color-converse/static/js/2.b523a19a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a26ebc1e123d9ba925a2",
-    "url": "/color-converse/static/js/main.ef40f268.chunk.js"
+    "revision": "eb15cf0f71b54acd2086",
+    "url": "/color-converse/static/js/main.6cde2e93.chunk.js"
   },
   {
     "revision": "275af6585161dd2540f1",
