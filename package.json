@@ -1,8 +1,8 @@
 {
-  "name": "color-converse",
+  "name": "color-convert",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://httpsbao.github.io/color-converse/",
+  "homepage": "https://httpsbao.github.io/color-convert/",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@testing-library/jest-dom": "^4.2.4",
